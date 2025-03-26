@@ -10,6 +10,11 @@
     <artifactId>sdk-mcp</artifactId>
     <name>sdk-mcp</name>
 
+    <properties>
+        <mcp.version>0.8.0</mcp.version>
+        <junit-jupiter.version>5.10.0</junit-jupiter.version>
+    </properties>
+
     <dependencies>
     </dependencies>
 </project>

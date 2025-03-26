@@ -21,12 +21,6 @@
         <maven-surefire-plugin.version>3.1.2</maven-surefire-plugin.version>
         <maven-jar-plugin.version>3.3.0</maven-jar-plugin.version>
         <maven-source-plugin.version>3.3.0</maven-source-plugin.version>
-
-        <spring-ai.version>1.0.0-M6</spring-ai.version>
-        <!--<spring-ai.version>1.0.0-SNAPSHOT</spring-ai.version>-->
-        <mcp.version>0.8.0</mcp.version>
-        <spring-boot.version>3.3.6</spring-boot.version>
-        <junit-jupiter.version>5.10.0</junit-jupiter.version>
     </properties>
 
     <modules>
