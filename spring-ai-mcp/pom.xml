@@ -8,7 +8,12 @@
     </parent>
 
     <artifactId>spring-ai-mcp</artifactId>
+    <packaging>pom</packaging>
     <name>spring-ai-mcp</name>
+
+    <modules>
+        <module>weather</module>
+    </modules>
 
     <dependencies>
     </dependencies>
