@@ -150,6 +150,7 @@
                 <plugin>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
+                    <version>${spring-boot.version}</version>
                     <executions>
                         <!--默认绑定package阶段，这些配置项目只能在依赖管理中配置
                             ！！！必须添加这个执行目标，否则编译的 Jar 包执行会报错-->
@@ -191,7 +192,7 @@
                         <dependency>
                             <groupId>org.springframework.boot</groupId>
                             <artifactId>spring-boot-maven-plugin</artifactId>
-                            <version>3.3.6</version>
+                            <version>${spring-boot.version}</version>
                         </dependency>
                     </dependencies>
                     <executions>

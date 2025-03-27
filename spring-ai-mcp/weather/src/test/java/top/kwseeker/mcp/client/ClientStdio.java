@@ -50,9 +50,9 @@ public class ClientStdio {
 		ListToolsResult toolsList = client.listTools();
 		System.out.println("Available Tools = " + toolsList);
 
-		CallToolResult weatherForcastResult = client.callTool(new CallToolRequest("getWeatherForecastByLocation",
+		CallToolResult weatherForecastResult = client.callTool(new CallToolRequest("getWeatherForecastByLocation",
 				Map.of("latitude", "47.6062", "longitude", "-122.3321")));
-		System.out.println("Weather Forcast: " + weatherForcastResult);
+		System.out.println("Weather Forecast: " + weatherForecastResult);
 
 		CallToolResult alertResult = client.callTool(new CallToolRequest("getAlerts", Map.of("state", "NY")));
 		System.out.println("Alert Response = " + alertResult);

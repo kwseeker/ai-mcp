@@ -8,13 +8,37 @@
     </parent>
 
     <artifactId>sdk-mcp</artifactId>
+    <packaging>pom</packaging>
     <name>sdk-mcp</name>
+
+    <modules>
+        <module>calculator</module>
+    </modules>
 
     <properties>
         <mcp.version>0.8.0</mcp.version>
         <junit-jupiter.version>5.10.0</junit-jupiter.version>
     </properties>
 
-    <dependencies>
-    </dependencies>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.modelcontextprotocol.sdk</groupId>
+                <artifactId>mcp-bom</artifactId>
+                <version>${mcp.version}</version>
+                <!-- 有效 POM 检查: mvn help:effective-pom -Doutput=effective-pom.xml -->
+                <type>pom</type>       <!-- 必须指定, 指定当前依赖是一个 POM 文件而不是默认的 JAR 文件-->
+                <scope>import</scope>   <!-- 必须指定, 将指定 POM 文件的 <dependencyManagement> 内容导入到当前 POM 中-->
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter</artifactId>
+                <version>${junit-jupiter.version}</version>
+                <scope>test</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+    </build>
 </project>
